@@ -35,7 +35,7 @@
 		
 		
 		<!-- https://mvnrepository.com/artifact/xerces/xercesImpl -->
-        <!--경로에 한글이 있을경우 오류가나는데 그것을 방지해줌. -->
+        <!-- xerces 경로에 한글이 있을경우 오류가나는데 그것을 방지해줌. -->
 			<dependency>
 			    <groupId>xerces</groupId>
 			    <artifactId>xercesImpl</artifactId>
@@ -44,7 +44,15 @@
 
 
 		
-		
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<!--lombok-->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.24</version>
+		    <scope>provided</scope>
+		</dependency>
+
 		
 		
 		
