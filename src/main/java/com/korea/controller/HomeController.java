@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import org.apache.commons.logging.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +15,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.korea.domain.TestDTO;
 
+import lombok.extern.log4j.Log4j;
+
+
+
+
+
+
+
 /**
  * Handles requests for the application home page.
  */
 @Controller
+@Log4j
 public class HomeController {
 	
 	@Autowired
@@ -46,8 +56,13 @@ public class HomeController {
 		dto.setAddr("주소주소");
 		System.out.println(dto);
 		
+		log.info("DTO :" +dto);
+		
 		
 		return "home";
 	}
+
+	
+	
 	
 }
