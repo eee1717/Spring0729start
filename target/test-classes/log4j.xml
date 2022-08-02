@@ -33,10 +33,21 @@
 		<level value="info" />
 	</logger>
 
+ 
+ 
+	<logger name="logLevelTests">
+		<level value="warn" />
+	</logger>
+
+	<logger name="jdbc.audit">
+		<level value="info" />
+	</logger>
+
 	<!-- Root Logger -->
 	<root>
 		<priority value="info" />
 		<appender-ref ref="console" />
 	</root>
+	
 	
 </log4j:configuration>
